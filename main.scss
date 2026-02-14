@@ -1,0 +1,290 @@
+* {
+	margin: 0;
+	font-family: sans-serif;
+}
+$colors-map: (
+	color1: rgb(20, 102, 150),
+	color2: rgb(26, 150, 20),
+);
+@each $name, $value in $colors-map {
+	.bg-#{$name} {
+		background-color: $value;
+	}
+	.#{name} {
+		color: $value;
+	}
+}
+
+// 	$colors:red,green,blue,orange;
+// 	@each $i in $colors {
+// 		.bg-#{$i}{
+// 			background-color: $i;
+// 			}
+// 	}
+
+@for $i from 1 to 1000 {
+	.w-#{$i} {
+		width: #{$i}px;
+	}
+
+	.h-#{$i} {
+		height: #{$i}px;
+	}
+	.p-#{$i} {
+		padding: #{$i}px;
+	}
+	.ptop-#{$i} {
+		padding-top: #{$i}px;
+	}
+	.pleft-#{$i} {
+		padding-left: #{$i}px;
+	}
+	.pright-#{$i} {
+		padding-left: #{$i}px;
+	}
+	.pbt-#{$i} {
+		padding-bottom: #{$i}px;
+	}
+	.mrj-#{$i} {
+		margin: #{$i}px;
+	}
+	.mtop-#{$i} {
+		margin-top: #{$i}px;
+	}
+	.mlf-#{$i} {
+		margin-left: #{$i}px;
+	}
+	.mrg-#{$i} {
+		margin-right: #{$i}px;
+	}
+	.mbt-#{$i} {
+		margin-bottom: #{$i}px;
+	}
+	.br-#{$i} {
+		border: #{$i}px solid rgba(128, 128, 128, 0.687);
+	}
+	.bdr-#{$i} {
+		border-radius: #{$i}px;
+	}
+	.bbt-#{$i} {
+		border-bottom: #{$i}px;
+	}
+	.tp-#{$i} {
+		top: #{$i}px;
+	}
+	.bt-#{$i} {
+		bottom: #{$i}px;
+	}
+	.lt-#{$i} {
+		left: #{$i}px;
+	}
+	.rg-#{$i} {
+		right: #{$i}px;
+	}
+	.zin-#{$i} {
+		z-index: #{$i}px;
+	}
+	.ord-#{$i} {
+		order: #{$i}px;
+	}
+	.gp-#{$i} {
+		gap: #{$i}px;
+	}
+	.fs-#{$i} {
+		font-size: #{$i}px;
+	}
+	.fw-#{$i} {
+		font-weight: #{$i};
+	}
+}
+$justify-map: (
+	btw: space-between,
+	ar: space-around,
+	even: space-evenly,
+	cnt: center,
+	str: start,
+	end: end,
+);
+@each $name, $value in $justify-map {
+	.jc-#{$name} {
+		justify-content: $value;
+	}
+}
+$colors:
+	red, green, blue, orange, yellow, black, white, aliceblue, aqua, blueviolet,
+	brown, darkblue, darkgreen, cornflowerblue, gold;
+@each $i in $colors {
+	.bg-#{$i} {
+		background-color: $i;
+	}
+}
+$colors:
+	red, green, blue, orange, yellow, black, white, aliceblue, aqua, blueviolet,
+	brown, darkblue, darkgreen, cornflowerblue, gold, grey;
+@each $i in $colors {
+	.clr-#{$i} {
+		color: $i;
+	}
+}
+$outline:
+	red, green, blue, orange, yellow, black, white, aliceblue, aqua, blueviolet,
+	brown, darkblue, darkgreen, cornflowerblue, gold;
+@each $i in $outline {
+	.ot-#{$i} {
+		outline: $i;
+	}
+}
+$alignc-map: (
+	cnt: center,
+	str: start,
+	ed: end,
+);
+@each $name, $value in $alignc-map {
+	.ali-#{$name} {
+		align-items: $value;
+	}
+}
+$aligns-map: (
+	cnt: center,
+	str: start,
+	ed: end,
+);
+@each $name, $value in $aligns-map {
+	.als-#{$name} {
+		align-self: $value;
+	}
+}
+$text-align-map: (
+	cnt: center,
+	str: start,
+	ed: end,
+);
+@each $name, $value in $text-align-map {
+	.txt-#{$name} {
+		text-align: $value;
+	}
+}
+$align-content-map: (
+	cnt: center,
+	btw: space-between,
+	ar: space-around,
+	even: space-evenly,
+);
+@each $name, $value in $align-content-map {
+	.alc-#{$name} {
+		align-content: $value;
+	}
+}
+$position-map: (
+	abs: absolute,
+	real: relative,
+	fix: fixed,
+	stc: static,
+	sty: sticky,
+);
+@each $name, $value in $position-map {
+	.pos-#{$name} {
+		position: $value;
+	}
+}
+$text-dec-map: (
+	dsh: dashed,
+	dtd: dotted,
+	dbl: double,
+	lth: line-through,
+	non: none,
+);
+@each $name, $value in $text-dec-map {
+	.txtd-#{$name} {
+		text-decoration: $value;
+	}
+}
+$display-map: (
+	fx: flex,
+	bl: block,
+	inl: inline,
+	non: none,
+);
+@each $name, $value in $display-map {
+	.dsp-#{$name} {
+		display: $value;
+	}
+}
+$justify-items-map: (
+	str: start,
+	cnt: center,
+	end: end,
+);
+@each $name, $value in $justify-items-map {
+	.ji-#{$name} {
+		justify-items: $value;
+	}
+}
+$justify-self-map: (
+	str: start,
+	cnt: center,
+	end: end,
+);
+@each $name, $value in $justify-self-map {
+	.js-#{$name} {
+		justify-self: $value;
+	}
+}
+$flex-grow-map: (
+	int: inherit,
+	ial: initial,
+	uns: unset,
+);
+@each $name, $value in $flex-grow-map {
+	.fxg-#{$name} {
+		flex-grow: $value;
+	}
+}
+$flex-wrap-map: (
+	nw: nowrap,
+	w: wrap,
+);
+@each $name, $value in $flex-wrap-map {
+	.fxw-#{$name} {
+		flex-wrap: $value;
+	}
+}
+$flex-direction-map: (
+	cl: column,
+	rw: row,
+	clrv: column-reverse,
+	rwrv: row-reverse,
+);
+@each $name, $value in $flex-direction-map {
+	.fxd-#{$name} {
+		flex-direction: $value;
+	}
+}
+$border-none: none;
+@each $i in $border-none {
+	.brn-#{$i} {
+		border: $i;
+	}
+}
+
+@each $name, $value in $flex-direction-map {
+	.fxd-#{$name} {
+		flex-direction: $value;
+	}
+}
+@for $i from 1 to 12 {
+    @for $j from 1 to 500 {
+        .gtr-#{$i}-#{$j}{
+            grid-template-rows: repeat($i, $j*1px);
+        }
+        .gtrf-#{$i}-#{$j}{
+            grid-template-rows: repeat($i, $j*1%);
+        }
+        .gtc-#{$i}-#{$j}{
+            grid-template-columns: repeat($i, $j*1px);
+        }
+        .gtcf-#{$i}-#{$j}{
+            grid-template-columns: repeat($i, $j*1%);
+        }
+    }
+}
