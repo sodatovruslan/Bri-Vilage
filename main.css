@@ -184144,4 +184144,8 @@
 
 .gtcf-11-499 {
   grid-template-columns: repeat(11, 499%);
+}
+
+.image-1 {
+  background-image: url("./main-pic-bg.png");
 }/*# sourceMappingURL=main.css.map */

@@ -288,3 +288,12 @@ $border-none: none;
         }
     }
 }
+$bg-image-map: (
+    image-1: "./main-pic-bg.png"
+   
+);
+@each $name, $value in $bg-image-map{
+    .#{$name}{
+        background-image: url($value);
+    }
+}
