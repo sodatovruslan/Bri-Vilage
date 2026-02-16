@@ -10,6 +10,7 @@ $colors-map: (
 	color5:rgb(234, 234, 234),
 	color6:#F0E7D9,
 	color7:#EAF5ED,
+	color8:rgb(91, 91, 91),
 	
 );
 @each $name, $value in $colors-map {
@@ -114,6 +115,10 @@ $colors-map: (
 	.gre-#{$i} {
 		grid-row-end: #{$i};
 	}
+	.ln-#{$i} {
+		line-height: #{$i}px;
+	}
+
 }
 $justify-map: (
 	btw: space-between,
